@@ -1,5 +1,7 @@
 # bracesRepo
-brace balancing challenge
+Brace balancing challenge
+
+*Please open index.html file and open console to view function results*
 
 *Design*
   -One main function (returns yes/no)
