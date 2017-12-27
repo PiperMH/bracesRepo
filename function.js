@@ -1,7 +1,11 @@
-/* 1.Create parent function called 'Braces' that takes one parameter called 'values'.
+/* 
+*Psuedo Code*
+1.Create parent function called 'Braces' that takes one parameter called 'values'.
     a.If balanced push YES to result array
+      i.balanceChecked returns true
     b.If not balanced return NO to result array
-   2.Create function called 'balanceChecked' to check if current string's braces are balanced.
+      i.balanceChecked returns false
+2.Create function called 'balanceChecked' to check if current string's braces are balanced.
     a.Take string and check each character.
     b.If current character matches an index of the 'openingBraces' array push to temp array 'stack'.
     c.If current character matches an index of the 'closingBraces' determine corresponding brace.
@@ -45,7 +49,7 @@ function balanceChecked(str) {
     } else if (closingBrackets.indexOf(currentCh) >= 0) { //if current character matches an index of "closingBraces"
 
       var matchingBracket = openingBrackets[closingBrackets.indexOf(currentCh)];//variable defining the matching brace
-      if (stack.pop() !== matchingBracket) { //if popped brace does not match corresponding closing brace
+      if (stack.pop() !== matchingBracket) { //if popped opening brace does not match corresponding closing brace
         return false; //return false
       }
     } else {
@@ -65,7 +69,7 @@ var i2 = [
   "]{no}[", "{[no}]", "[{no)]"
 ];
 
-//logging results in console
+//logging results into  console
 alert("Please open console to view results of the 'braces function'")
 console.log( i1 + " returns: " + braces(i1)); // ["YES","YES","YES"]
 console.log( i2 + " returns: " + braces(i2)); // ["NO","NO","NO"]
