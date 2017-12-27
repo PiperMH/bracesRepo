@@ -1,4 +1,14 @@
 /* 
+*Design*
+  -One main function (returns yes/no)
+    -for loop to grab word
+    -array to push yes/no to
+  -One sub function (checks to see if balance)
+    -for loop to grab character
+    -array to temp hold character if brace
+  -Test variables
+  -Run function with variables
+
 *Psuedo Code*
 1.Create parent function called 'Braces' that takes one parameter called 'values'.
     a.If balanced push YES to result array
